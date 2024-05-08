@@ -3,6 +3,8 @@ class Security extends Conexion
 {
     private $loginPage = "login.php";
     private $homePage = "index.php";
+    private $registerPage = "inicio.php";
+
     public function __construct()
     {
         parent::__construct();
@@ -11,8 +13,10 @@ class Security extends Conexion
 
     public function checkLoggedIn()
     {
-        if (!isset ($_SESSION["loggedIn"]) || !$_SESSION["loggedIn"]) {
+        if (!isset($_SESSION["loggedIn"]) || !$_SESSION["loggedIn"]) {
             header("Location: " . $this->loginPage);
+        }else{
+            header("Location: " . $this->registerPage);
         }
     }
 
@@ -31,9 +35,8 @@ class Security extends Conexion
         }
     }
 
-    public function getUserData()
-    {
-        if (isset ($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) {
+    public function getUserData(){
+        if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) {
             return $_SESSION["loggedIn"];
         }
     }
@@ -75,4 +78,3 @@ class Security extends Conexion
         }
     }
 }
-

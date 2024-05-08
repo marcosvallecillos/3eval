@@ -18,29 +18,29 @@ $loginMessage = $security->doLogin();
 
 		<h1><a>Login</a></h1>
 		<form class="appnitro" method="post" action="">
-					<div class="form_description">
-			<h2>Login</h2>
-			<h4><?=$loginMessage?></h4>
-			<p></p>
-		</div>
-			<ul >
-
-					<li id="li_1" >
-		<label class="description" for="userName">User Name </label>
-		<div>
-			<input name="userName" class="element text medium" type="text" maxlength="255" value=""/>
-		</div>
-		</li>		<li id="li_2" >
-		<label class="description" for="userPassword">User Password </label>
-		<div>
-			<input name="userPassword" class="element text medium" type="password" maxlength="255" value=""/>
-		</div>
-		</li>
-
-					<li class="buttons">
-
-				<input id="saveForm" class="button_text" type="submit" name="submit" value="Log In" />
-		</li>
+			<div class="form_description">
+				<h2>Login</h2>
+				<h4><?=$loginMessage?></h4>
+				<p></p>
+			</div>
+			<ul>
+				<li id="li_1" >
+					<label class="description" for="userName">User Name </label>
+					<div>
+						<input name="userName" class="element text medium" type="text" maxlength="255" value=""/>
+					</div>
+				</li>
+				<li id="li_2" >
+					<label class="description" for="userPassword">User Password </label>
+					<div>
+						<input name="userPassword" class="element text medium" type="password" maxlength="255" value=""/>
+					</div>
+				</li>
+				<li class="buttons">
+					<input id="saveForm" class="button_text" type="submit" name="submit" value="Log In" />
+					<!-- Enlace para dirigir a la página de registro -->
+					<a href="inicio.php">Registrarse</a>
+				</li>
 			</ul>
 		</form>
 		<div id="footer">
@@ -48,5 +48,6 @@ $loginMessage = $security->doLogin();
 		</div>
 	</div>
 	<img id="bottom" src="form/bottom.png" alt="">
-	</body>
+</body>
 </html>
+

@@ -29,18 +29,17 @@ $loginMessage = $security->doLogin();
                 <p></p>
             </div>
             <ul>
-
-                <li id="li_1">
+            
+                <li id="li_2">
                     <label class="description" for="userName">User Name </label>
                     <div>
                         <input name="userName" class="element text medium" type="text" maxlength="255" value="" />
                     </div>
                 </li>
-                <li id="li_2">
+                <li id="li_3">
                     <label class="description" for="userPassword">User Password </label>
                     <div>
-                        <input name="userPassword" class="element text medium" type="password" maxlength="255"
-                            value="" />
+                        <input name="userPassword" class="element text medium" type="password" maxlength="255" value="" />
                     </div>
                 </li>
 
